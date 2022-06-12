@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Gift renders properly 1`] = `
+<fieldset
+  className="border p-3 rounded-3 my-3"
+>
+  <Form>
+    <FormGroup>
+      <FormLabel
+        column={false}
+        visuallyHidden={false}
+      >
+        Person
+      </FormLabel>
+      <FormControl
+        className="input-person"
+        onChange={[Function]}
+      />
+    </FormGroup>
+    <FormGroup>
+      <FormLabel
+        column={false}
+        visuallyHidden={false}
+      >
+        Present
+      </FormLabel>
+      <FormControl
+        className="input-present"
+        onChange={[Function]}
+      />
+    </FormGroup>
+  </Form>
+  <Button
+    active={false}
+    className="btn-remove m-3"
+    disabled={false}
+    onClick={[Function]}
+    variant="primary"
+  >
+    Remove Gift
+  </Button>
+</fieldset>
+`;
