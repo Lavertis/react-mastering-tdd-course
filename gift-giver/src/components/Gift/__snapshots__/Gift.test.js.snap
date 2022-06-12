@@ -3,15 +3,27 @@
 exports[`Gift renders properly 1`] = `
 <div>
   <Form>
-    <FormLabel
-      column={false}
-      visuallyHidden={false}
-    >
-      Person
-    </FormLabel>
     <FormGroup>
+      <FormLabel
+        column={false}
+        visuallyHidden={false}
+      >
+        Person
+      </FormLabel>
       <FormControl
         className="input-person"
+        onChange={[Function]}
+      />
+    </FormGroup>
+    <FormGroup>
+      <FormLabel
+        column={false}
+        visuallyHidden={false}
+      >
+        Present
+      </FormLabel>
+      <FormControl
+        className="input-present"
         onChange={[Function]}
       />
     </FormGroup>
