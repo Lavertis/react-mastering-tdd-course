@@ -7,5 +7,14 @@ exports[`renders correctly 1`] = `
   <h2>
     Gift Giver
   </h2>
+  <Button
+    active={false}
+    className="btn-add"
+    disabled={false}
+    onClick={[Function]}
+    variant="primary"
+  >
+    Add Gift
+  </Button>
 </div>
 `;
