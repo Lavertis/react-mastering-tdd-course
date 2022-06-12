@@ -7,4 +7,8 @@ describe('App', function () {
     it('renders properly', function () {
         expect(app).toMatchSnapshot();
     });
+
+    it('contains a connected Wallet component', function () {
+        expect(app.find('Connect(Wallet)').exists()).toBeTruthy();
+    });
 });

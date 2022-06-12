@@ -14,4 +14,8 @@ export class Wallet extends Component {
     }
 }
 
-export default connect()(Wallet);
+const mapStateToProps = state => {
+    return {balance: state.balance};
+};
+
+export default connect(mapStateToProps)(Wallet);
