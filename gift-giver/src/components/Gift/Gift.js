@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
-import {Form, FormControl, FormGroup, FormLabel} from "react-bootstrap";
+import {Button, Form, FormControl, FormGroup, FormLabel} from "react-bootstrap";
 
 
 class Gift extends Component {
     constructor() {
         super();
 
-        this.state = {person: '', present: ''}
+        this.state = {person: '', present: ''};
     }
 
     render() {
@@ -28,8 +28,13 @@ class Gift extends Component {
                         />
                     </FormGroup>
                 </Form>
+                <Button
+                    className="btn-remove"
+                    onClick={() => this.props.removeGift(this.props.gift.id)}>
+                    Remove Gift
+                </Button>
             </div>
-        )
+        );
     }
 }
 

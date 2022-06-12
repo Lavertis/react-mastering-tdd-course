@@ -6,16 +6,21 @@ class App extends Component {
     constructor() {
         super();
 
-        this.state = {gifts: []}
+        this.state = {gifts: []};
     }
 
     addGift = () => {
         const {gifts} = this.state;
         const ids = gifts.map(gift => gift.id);
         const maxId = ids.length > 0 ? Math.max(...ids) : 0;
-        gifts.push({id: maxId + 1})
+        gifts.push({id: maxId + 1});
         this.setState({gifts});
-    }
+    };
+
+    removeGift = (id) => {
+        const gifts = this.state.gifts.filter(gift => gift.id !== id);
+        this.setState({gifts});
+    };
 
     render() {
         return (
@@ -23,7 +28,13 @@ class App extends Component {
                 <h2>Gift Giver</h2>
                 <div className="gift-list">
                     {this.state.gifts.map(gift => {
-                        return <Gift key={gift.id}></Gift>
+                        return (
+                            <Gift
+                                key={gift.id}
+                                gift={gift}
+                                removeGift={this.removeGift}
+                            />
+                        );
                     })}
                 </div>
                 <Button
