@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Gift renders properly 1`] = `
-<div>
+<fieldset
+  className="border p-3 rounded-3 my-3"
+>
   <Form>
     <FormGroup>
       <FormLabel
@@ -30,12 +32,12 @@ exports[`Gift renders properly 1`] = `
   </Form>
   <Button
     active={false}
-    className="btn-remove"
+    className="btn-remove m-3"
     disabled={false}
     onClick={[Function]}
     variant="primary"
   >
     Remove Gift
   </Button>
-</div>
+</fieldset>
 `;

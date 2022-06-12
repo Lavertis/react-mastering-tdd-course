@@ -1,5 +1,5 @@
 import {Component} from "react";
-import {Button} from "react-bootstrap";
+import {Button, Col} from "react-bootstrap";
 import Gift from "../Gift/Gift";
 import {maxNumber} from "../../helpers";
 
@@ -25,7 +25,7 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
+            <Col xs={4} className="App text-center mx-auto my-5">
                 <h2>Gift Giver</h2>
                 <div className="gift-list">
                     {this.state.gifts.map(gift => {
@@ -38,12 +38,8 @@ class App extends Component {
                         );
                     })}
                 </div>
-                <Button
-                    className="btn-add"
-                    onClick={this.addGift}>
-                    Add Gift
-                </Button>
-            </div>
+                <Button className="btn-add m-2" onClick={this.addGift}>Add Gift</Button>
+            </Col>
         );
     }
 }

@@ -11,7 +11,7 @@ class Gift extends Component {
 
     render() {
         return (
-            <div>
+            <fieldset className="border p-3 rounded-3 my-3">
                 <Form>
                     <FormGroup>
                         <FormLabel>Person</FormLabel>
@@ -28,12 +28,10 @@ class Gift extends Component {
                         />
                     </FormGroup>
                 </Form>
-                <Button
-                    className="btn-remove"
-                    onClick={() => this.props.removeGift(this.props.gift.id)}>
+                <Button className="btn-remove m-3" onClick={() => this.props.removeGift(this.props.gift.id)}>
                     Remove Gift
                 </Button>
-            </div>
+            </fieldset>
         );
     }
 }
