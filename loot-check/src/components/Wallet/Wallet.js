@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from "react-redux";
-import {deposit, withdraw} from "../../actions/balance/balance";
+import {deposit, withdraw} from "../../actions/balance/balanceActions";
 
 
 export class Wallet extends Component {

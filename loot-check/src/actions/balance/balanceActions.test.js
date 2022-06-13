@@ -1,4 +1,4 @@
-import * as balanceActions from './balance';
+import * as balanceActions from './balanceActions';
 import actionTypes from "../actionTypes";
 
 it('creates an action to set the balance', function () {
