@@ -9,5 +9,17 @@ exports[`App renders properly 1`] = `
   </h2>
   <hr />
   <Connect(Wallet) />
+  <hr />
+  <Connect(Loot) />
+  <div>
+    Powered by 
+    <a
+      href="https://www.coindesk.com/price"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Coindesk
+    </a>
+  </div>
 </div>
 `;
