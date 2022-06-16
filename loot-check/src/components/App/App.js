@@ -9,6 +9,10 @@ function App() {
             <Wallet/>
             <hr/>
             <Loot/>
+            <div>
+                Powered by&nbsp;
+                <a target="_blank" rel="noreferrer" href="https://www.coindesk.com/price">Coindesk</a>
+            </div>
         </div>
     );
 }
