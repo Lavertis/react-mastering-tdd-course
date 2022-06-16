@@ -11,4 +11,8 @@ describe('App', function () {
     it('contains a connected Wallet component', function () {
         expect(app.find('Connect(Wallet)').exists()).toBeTruthy();
     });
+
+    it('contains a connected Loot component', function () {
+        expect(app.find('Connect(Loot)').exists()).toBeTruthy();
+    });
 });

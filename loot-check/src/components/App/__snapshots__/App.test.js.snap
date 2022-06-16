@@ -9,5 +9,7 @@ exports[`App renders properly 1`] = `
   </h2>
   <hr />
   <Connect(Wallet) />
+  <hr />
+  <Connect(Loot) />
 </div>
 `;

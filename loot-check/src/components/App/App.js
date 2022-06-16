@@ -1,4 +1,5 @@
 import Wallet from "../Wallet/Wallet";
+import Loot from "../Loot/Loot";
 
 function App() {
     return (
@@ -6,6 +7,8 @@ function App() {
             <h2>Loot Check</h2>
             <hr/>
             <Wallet/>
+            <hr/>
+            <Loot/>
         </div>
     );
 }

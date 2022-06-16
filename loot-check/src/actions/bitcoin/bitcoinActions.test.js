@@ -7,7 +7,7 @@ import {fetchBitcoin} from "./bitcoinActions";
 const createMockStore = configureMockStore([thunk]);
 const store = createMockStore({bitcoin: {}});
 
-const mockResponse = {body: {bpi: 'bitcoin price index'}};
+const mockResponse = {bpi: 'bitcoin price index'};
 
 beforeEach(function () {
     // import and pass your custom axios instance to this method
@@ -28,7 +28,7 @@ it('creates an async action to fetch the bitcoin value', () => {
         });
     });
 
-    const expectedActions = [{payload: mockResponse.body, type: actionTypes.FETCH_BITCOIN}];
+    const expectedActions = [{payload: mockResponse, type: actionTypes.FETCH_BITCOIN}];
     return store.dispatch(fetchBitcoin()).then(() => {
         expect(store.getActions()).toEqual(expectedActions);
     });
